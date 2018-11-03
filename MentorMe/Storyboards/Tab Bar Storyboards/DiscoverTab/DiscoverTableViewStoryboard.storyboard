@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UGR-cv-PWW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Discover-->
+        <scene sceneID="l9m-sm-sK1">
+            <objects>
+                <viewController storyboardIdentifier="DiscoverTableViewController" title="Discover" id="UGR-cv-PWW" customClass="DiscoverTableViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iS1-ez-RaY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="z0l-7Z-vq7"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="search" id="Dcp-8N-CCd"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="pjO-pe-pt6" kind="presentation" identifier="filterSegue" id="d4Z-Dm-b3k"/>
+                        <segue destination="RbV-D6-zF5" kind="show" identifier="segueToMentorDetailsViewController" id="D1x-I0-Wiv"/>
+                        <segue destination="8sg-L4-Yi7" kind="presentation" identifier="segueToNotifications" id="tj0-04-Mbk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="anQ-We-Gm0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2184.8000000000002" y="186.65667166416793"/>
+        </scene>
+        <!--MentorDetailsStoryboard-->
+        <scene sceneID="x6q-r8-rhk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MentorDetailsStoryboard" id="RbV-D6-zF5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NkJ-JQ-QRC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3322" y="121"/>
+        </scene>
+        <!--Filters-->
+        <scene sceneID="wQI-II-MkJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Filters" id="pjO-pe-pt6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VCh-A6-txC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3345" y="238"/>
+        </scene>
+        <!--notifications-->
+        <scene sceneID="Wns-fk-2V1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notifications" referencedIdentifier="notifications" id="8sg-L4-Yi7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pMS-I9-47E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3270" y="326"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="search" width="32" height="32"/>
+    </resources>
+</document>
